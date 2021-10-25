@@ -20,8 +20,6 @@ router.route("/Coins").get(function (req, res) {
     db_connect
       .collection("Coins")
       .find({
-
-        "tokensArrays.id":'0x00000000000045166c45af0fc6e4cf31d9e14b9a'
       })
       .toArray(function (err, result) {
         if (err) throw err;
